@@ -33,5 +33,6 @@ print(tag(content='testing', name='img'))
 
 # 同名键会被绑定到具名参数上
 my_tag = {'name': 'img', 'title': 'Sunset Boulevard', 'src': 'Sunset.jpg', 'cls': 'framed'}
+# my_tag前面加上**，字典中的所有元素作为单个参数传入
 print(tag(**my_tag))
 # <img title="Sunset Boulevard" src="Sunset.jpg" class="framed" />
